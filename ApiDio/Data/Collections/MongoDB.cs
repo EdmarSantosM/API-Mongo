@@ -11,7 +11,7 @@ namespace Api.Data
     {
         public IMongoDatabase DB { get; }
 
-        public MongoDB(IConfiguration configuration)
+        public MongoDB(IConfiguration configuration) //Construtor da Classe 
         {
             try
             {
