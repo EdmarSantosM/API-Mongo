@@ -10,8 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using ApiDio.Data.Collections;
 
-namespace ApiDio
+namespace Api
 {
     public class Startup
     {
@@ -26,6 +27,7 @@ namespace ApiDio
         public void ConfigureServices(IServiceCollection services)
         {
             // Onde é  adicionado os serviços 
+            services.AddSingleton<Data.MongoDB>();
             services.AddControllers();
         }
 
