@@ -1,7 +1,12 @@
+using System;
+
 namespace ApiDio.Models
 {
-    public class InfectadoDto
+    public class InfectadoDto // View Model
     {
-        
+        public DateTime DataNascimento { get; set; }
+        public string Sexo { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
     }
 }
