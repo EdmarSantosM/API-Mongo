@@ -3,7 +3,7 @@ using MongoDB.Driver.GeoJsonObjectModel;
 
 namespace ApiDio.Data.Collections
 {
-    public class Infectado
+    public class Infectado //  Essa  classe  representa a  coleção de dados ( Collections)
     {
         public Infectado( DateTime dataNascimento, string sexo, double latitude, double longitude)
         {
